@@ -22,6 +22,8 @@ $app->get('/', function() use($app) {
   return $app['twig']->render('index.twig');
 });
 
+/* ADD BROWSE PAGE */
+
 $app->get('/browse', function() use($app) {
   $app['monolog']->addDebug('logging output.');
   return $app['twig']->render('browse.twig');
