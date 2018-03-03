@@ -1,5 +1,12 @@
 .container {
   width: auto;
   background-color: blue;
-  
+}
+
+.login_modal {
+  width: auto;
+  height: auto;
+  background: white;
+  color: black;
+  font-size: 20px;
 }
