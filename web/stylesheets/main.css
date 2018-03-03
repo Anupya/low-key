@@ -1,12 +1,69 @@
-.container {
-  width: auto;
-  background-color: blue;
+.home {
+  background: blue;
 }
 
 .login_modal {
-  width: auto;
-  height: auto;
+  left: 0px;
+  right: 0px;
+  position: absolute;
   background: white;
   color: black;
-  font-size: 20px;
+  font-size: 16px;
 }
+
+.login_modal .form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.login_modal .form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #4CAF50;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+
+.login_modal .form button:hover,.form button:active,.form button:focus {
+  background: #43A047;
+}
+
+.player iframe {
+  left: 0px;
+  right: 0px;
+  position: absolute;
+}
+
+.player .overlay {
+  background: black;
+  opacity: 0.4;
+  display: inline-block;
+  position: relative;
+}
+
+.player .overlay img {
+  height: 50px;
+  width: 50px;
+}
+
+
+
+
+
+
+
+
