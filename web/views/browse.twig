@@ -1,22 +1,29 @@
 {% extends "layout.html" %}
 
 {% block content %}
-<div class="jumbotron text-center">
-  <div class="container">
-    <a href="/" class="lang-logo">
-      <img src="/images/lang-logo.png">
-    </a>
 
-    <iframe src="https://open.spotify.com/embed?uri=spotify%3Atrack%3A33Q6ldVXuJyQmqs8BmAa0k" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+<!-- THE ENTIRE PAGE -->
+<div class="browse">
 
-    <iframe src="https://open.spotify.com/embed?uri=spotify%3Atrack%3A33Q6ldVXuJyQmqs8BmAa0k" width="300" height="80" frameborder="0" allowtransparency="true"></iframe>
+  <h1> THIS IS A BROWSE PAGE </h1>
 
-    <iframe src="https://open.spotify.com/embed?uri=spotify%3Atrack%3A33Q6ldVXuJyQmqs8BmAa0k" width="250" height="330" frameborder="0" allowtransparency="true"></iframe>
+  <!-- THIS IS THE MODAL THAT CONTAINS EVERYTHING -->
+  <div class="now_playing">
+    <div class="album">
+      <img src="https://en.wikipedia.org/wiki/Album_(Public_Image_Ltd_album)#/media/File:Public_image_ltd_album_cover.jpg">
+      
+      <div class="player">
 
-    <!-- SPLASH PAGE -->
-    
-    <h1> THIS IS A BROWSE PAGE </h1>
+        <iframe src="https://open.spotify.com/embed?uri=spotify%3Atrack%3A33Q6ldVXuJyQmqs8BmAa0k" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+
+        <iframe src="https://open.spotify.com/embed?uri=spotify%3Atrack%3A33Q6ldVXuJyQmqs8BmAa0k" width="300" height="80" frameborder="0" allowtransparency="true"></iframe>
+
+        <iframe src="https://open.spotify.com/embed?uri=spotify%3Atrack%3A33Q6ldVXuJyQmqs8BmAa0k" width="250" height="330" frameborder="0" allowtransparency="true"></iframe>
+
+      </div>
+    </div>
   </div>
 </div>
 
 {% endblock %}
+
