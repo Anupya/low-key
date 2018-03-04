@@ -19,7 +19,7 @@
 }
 @keyframes overlay_animation {
     from {opacity: 0;}
-    to {opacity: 0.4;}
+    to {opacity: 1;}
 }
 
 
@@ -36,6 +36,7 @@ h1 {
     position: relative;
     top: 100px;
     color: white;
+    z-index: 100;
 }
 
 .home {
@@ -99,6 +100,7 @@ h1 {
     padding: 15px;
     cursor: pointer;
     background: blue;
+    margin-bottom: 10px
 }
 .login_modal .login button:hover {
     animation: hover_button 0.6s;
@@ -119,17 +121,17 @@ h1 {
 }
 
 .under_login {
-  display: inline-block;
+    margin: auto;
+    text-align: center;
 }
-
 .under_login button {
     color: white;
     background: black;
-    margin: 50px;
-    height: 40px;
+    margin: auto;
     border: none;
     font-size: 14px;
     cursor: pointer;
+    top: 20px;
 }
 
 .under_login button:hover {
@@ -153,9 +155,15 @@ h1 {
     min-width: 700px;
 }
 
+.browse .top_left_logo {
+    height: 30px;
+    width: 20px;
+    top: 0px;
+    left: 0px;
+}
+
 .browse .overlay {
     background: white;
-    opacity: 0.4; 
     height: 90%;
     width: 70%;
     left: 0px;
@@ -171,17 +179,17 @@ h1 {
 .browse .wallpaper {
     height: 100%;
     width: 100%;
-    animation: overlay_animation 4s;
-    opacity: 0.8;
+    opacity: 1;
 }
 
 h2 {
     color: black;
     font-family: Roboto, sans-serif;
     font-size: 20px;
-    font-weight: 100;
+    font-weight: 800;
     text-align: center;
     top: 200px;
+    line-height: 20px;
 }
 .player iframe {
     left: 0px;

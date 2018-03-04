@@ -3,6 +3,7 @@
 
   <img class="wallpaper" src="/images/browse_wallpaper.png">
  <div class="overlay">
+  <img class="top_left_logo" src="/images/logo.png">
   <script> 
     $(function() {
        $(".overlay").one('click', function(e) {
@@ -23,6 +24,14 @@
         
           <div class="thumbs">
             <img src="/images/Thumbsup.png" alt="Thumbs up"/>
+            <script> 
+            $(function() {
+               $(".thumbs").one('click', function(e) {
+                   $('iframe').remove();
+                   $('.player').append("<iframe src='https://open.spotify.com/embed?uri=spotify%3Atrack%3A33Q6ldVXuJyQmqs8BmAa0k' width='250' height='330' frameborder='0' allowtransparency='true'></iframe>");
+               });
+            });
+            </script>
             <img src="/images/Thumbsdown.png" alt="Thumbs down" />
             <script>
               function thumbsClicked() {
