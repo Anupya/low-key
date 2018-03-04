@@ -7,28 +7,25 @@
 }
 
 .login_modal {
-    margin: auto;
     top: 400px;
-    left: 0px;
-    right: 0px;
     width: 40%;
     position: absolute;
     font-size: 14px;
     font-family: "Roboto", sans-serif;
-    background: green;
-}
-
-.login_modal label {
+    padding: 45px;
+    background: blue;
     margin: auto;
+    left: 0px;
+    right: 0px;
 }
 
 .login_modal .login button {
     width: 30%;
-    height: 50px;
+    height: 20px;
     margin: auto;
     padding: 30px;
-
 }
+
 .login_modal .form {
     margin: auto;
     z-index: 1;
@@ -39,12 +36,14 @@
 
 .login_modal .form input {
     font-family: "Roboto", sans-serif;
-    background: blue;
-    margin: 0 0 15px;
-    padding: 15px;
-    box-sizing: border-box;
-    font-size: 14px;
+    margin: 0 0 30px;
+    left: 0px;
+    right: 0px;
     width: 100%;
+    padding: 15px;
+    font-size: 20px;
+    width: 100%;
+    height: 30px;
 }
 
 .login_modal .login button {
@@ -58,10 +57,13 @@
 .login_modal .form button:hover,.form button:active,.form button:focus {
     background: white;
     color: black;
+    border: blue;
 }
 
 .container button {
     color: black;
+    background: white;
+    padding: 30px;
 }
 
 .container a {
