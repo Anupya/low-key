@@ -6,8 +6,19 @@ body {
     background: blue;
 }
 
+.ui-divider {
+    margin: 1rem 0;
+    line-height: 1;
+    height: 0;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: rgba(0,0,0,0.85);
+    border-top: 1px solid rgba(34,36,38,0.15);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
 .login_modal {
-    top: 500px;
+    top: 350px;
     width: 40%;
     position: absolute;
     font-size: 14px;
