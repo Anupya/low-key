@@ -162,25 +162,6 @@ h1 {
     margin: auto;
 }
 
-.player .overlay {
-    background: black;
-    opacity: 0.4;
-    display: inline-block;
-    position: relative;
-}
-
-.player .overlay img {
-    height: 200px;
-    width: 200px;
-    position: relative;
-    left: 0px;
-    bottom: 0px;
-    padding: 20px;
-}
-
-
-
-
 
 
 
