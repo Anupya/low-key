@@ -14,8 +14,8 @@
     to {background: white; }
 }
 @keyframes logo_animation {
-    from {height: 100px; opacity: 0%;}
-    to {height: 170px; opacity: 100%;}
+    from {height: 180px; opacity: 0%;}
+    to {height: 240px; opacity: 100%;}
 }
 
 /* HOME PAGE --------------------------------  */
@@ -52,6 +52,8 @@ h1 {
     left: 0px;
     right: 0px;
     top: 10%;
+    height: 240px;
+    width: 260px;
     position: absolute;
     animation: logo_animation 2s;
 }
@@ -120,8 +122,8 @@ h1 {
 .under_login button {
     color: white;
     background: black;
-    padding: 10px;
-    margin: 30px;
+    padding: 3px;
+    margin: 60px;
     height: 40px;
     border: none;
     font-size: 12px;
