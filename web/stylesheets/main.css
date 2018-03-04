@@ -17,11 +17,26 @@
     from {height: 200px; opacity: 0; width: 220px;}
     to {height: 240px; opacity: 1; width: 260px;}
 }
+@keyframes overlay_animation {
+    from {opacity: 0;}
+    to {opacity: 0.4;}
+}
+@keyframes slide {
+  20% {margin-left: 0px;}
+  30% {margin-left: -1000px;}
+  50% {margin-left: -1000px;}
+  60% {margin-left: -1456px;}
+  70% {margin-left: -1456px;}
+  80% {margin-left: -100%;}
+  90% {margin-left: -100%;}
+}
+
 
 /* HOME PAGE --------------------------------  */
 
 body {
     background: blue;
+    min-width: 700px;
 }
 
 h1 {
@@ -31,22 +46,28 @@ h1 {
     color: white;
 }
 
-/*
-.ui-divider {
-    position: relative;
-    margin: auto;
-    top: 180px;
-    height: 0;
-    font-weight: 700;
-    letter-spacing: 0.05em;
-    color: white;
-    width: 70%;
-    border-top: 1px solid rgba(34,36,38,0.15);
-    border-bottom: 1px solid rgba(255,255,255,0.1);
-    animation: line_animation 3s;
+#slideshow {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    display: inline-block;
 }
-*/
 
+.slide-wrapper {
+    width: 100%;
+    animation: slide 18s ease infinite;
+}
+
+.wallpaper {
+    float: left;
+    height: 100%;
+    width: 100%;
+}
+.home {
+    height: 100%;
+    width: 100%;
+    animation: overlay_animation 4s;
+}
 .home .logo {
     margin: auto;
     left: 0px;
@@ -88,14 +109,15 @@ h1 {
     font-size: 16px;
     cursor: default;
     background: #f2f2f2;
+    cursor: text;
 }
 
 .login_modal .login button {
     color: black;
     width: 100%;
     border: 3px black;
-    font-size: 14px;
-    padding: 10px;
+    font-size: 18px;
+    padding: 15px;
     cursor: pointer;
     background: blue;
 }
@@ -124,11 +146,10 @@ h1 {
 .under_login button {
     color: white;
     background: black;
-    padding: 3px;
-    margin: 60px;
+    margin: 50px;
     height: 40px;
     border: none;
-    font-size: 12px;
+    font-size: 14px;
     cursor: pointer;
 }
 
@@ -151,8 +172,39 @@ h1 {
 .browse {
     background: blue;
     height: 100%;
+    min-width: 700px;
 }
 
+.browse .overlay {
+    background: white;
+    opacity: 0.4; 
+    height: 90%;
+    width: 70%;
+    left: 0px;
+    right: 0px;
+    top: 5%;
+    left: 15%;
+    position: absolute;
+    z-index: 100;
+    animation: overlay_animation 2s;
+    cursor: pointer;
+}
+
+.browse .wallpaper {
+    height: 100%;
+    width: 100%;
+    animation: overlay_animation 4s;
+    opacity: 0.4;
+}
+
+h2 {
+    color: black;
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    text-align: center;
+    top: 200px;
+}
 .player iframe {
     left: 0px;
     right: 0px;
@@ -177,9 +229,13 @@ h1 {
     display: inline-block;
 }
 .thumbs img:hover {
+    cursor: pointer;
     /* add stuff here */
 }
-
+.thumbs img:active {
+    top: 4px;
+    /* add stuff here */
+}
 
 
 

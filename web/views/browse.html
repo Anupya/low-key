@@ -1,22 +1,43 @@
-
-
 <!-- THE ENTIRE PAGE -->
 <div class="browse">
- 
+
+  <img class="wallpaper" src="/images/browse_wallpaper.png">
+ <div class="overlay">
+  <script> 
+    $(function() {
+       $(".overlay").one('click', function(e) {
+           $('.overlay').remove();
+       });
+    });
+    </script>
+    <h2> Make sure you have your volume turned up! <br><br> Click anywhere to start hunting! </h2>
+  </div>
+
   <!-- THIS IS THE MODAL THAT CONTAINS EVERYTHING -->
   <div class="now_playing">
+    <script>
+        if (!($('.overlay').length)) {
+          document.getElementById("play-button").click();
+        }
+        document.getElementById("play-button").click();
+      }
+    </script>
     <div class="album">
       
       <div class="player">
-        <iframe src="https://open.spotify.com/embed?uri=spotify%3Atrack%3A33Q6ldVXuJyQmqs8BmAa0k" width="250" height="330" frameborder="0" allowtransparency="true"></iframe>
+        <iframe src="https://open.spotify.com/embed?uri=spotify%3Atrack%3A33Q6ldVXuJyQmqs8BmAa0k"
+        width="250" height="330" frameborder="0" allowtransparency="true"></iframe>
         
-
           <div class="thumbs">
             <img src="/images/Thumbsup.png" alt="Thumbs up"/>
             <img src="/images/Thumbsdown.png" alt="Thumbs down" />
+            <script>
+              function thumbsClicked() {
+                $(".thumbs").append();
+              };
+            </script>
           </div>
 
-       </iframe>
         <!--
         <iframe src="https://open.spotify.com/embed?uri=spotify%3Atrack%3A33Q6ldVXuJyQmqs8BmAa0k" width="300" height="80" frameborder="0" allowtransparency="true"></iframe>
 
