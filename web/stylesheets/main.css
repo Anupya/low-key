@@ -14,8 +14,8 @@
     to {background: white; }
 }
 @keyframes logo_animation {
-    from {height: 180px; opacity: 0%;}
-    to {height: 240px; opacity: 100%;}
+    from {height: 200px; opacity: 0; width: 220px;}
+    to {height: 240px; opacity: 1; width: 260px;}
 }
 
 /* HOME PAGE --------------------------------  */
@@ -104,7 +104,9 @@ h1 {
     background: white;
     color: black;
 }
-
+.login_modal .login button:active {
+    border: none;
+}
 .login_modal .checkbox {
     left: 0px;
     right: 0px;
