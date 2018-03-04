@@ -1,4 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
+@import url('https://fonts.googleapis.com/css?family=Muli:200:400|Roboto:700');
+
+@keyframes line_animation {
+  from { width: 0px; }
+  to { width: 900px; }
+}
 
 /* HOME PAGE --------------------------------  */
 
@@ -16,7 +22,7 @@ h1 {
 .ui-divider {
     position: relative;
     margin: auto;
-    line-height: 1;
+    line-height: 3px;
     top: 130px;
     height: 0;
     font-weight: 700;
@@ -25,6 +31,7 @@ h1 {
     width: 70%;
     border-top: 1px solid rgba(34,36,38,0.15);
     border-bottom: 1px solid rgba(255,255,255,0.1);
+    animation: line_animation 3s;
 }
 
 .login_modal {
