@@ -2,8 +2,20 @@
 @import url('https://fonts.googleapis.com/css?family=Muli:200:400|Roboto:700');
 
 @keyframes line_animation {
-  from { width: 0px; }
-  to { width: 900px; }
+  from { width: 0%; }
+  to { width: 70%; }
+}
+@keyframes under_hover_button {
+    from {color: white; }
+    to {color: blue; }
+}
+@keyframes hover_button {
+    from {background: blue; }
+    to {background: white; }
+}
+@keyframes logo_animation {
+    from {height: 100px; opacity: 0%;}
+    to {height: 170px; opacity: 100%;}
 }
 
 /* HOME PAGE --------------------------------  */
@@ -19,11 +31,11 @@ h1 {
     color: white;
 }
 
+/*
 .ui-divider {
     position: relative;
     margin: auto;
-    line-height: 3px;
-    top: 130px;
+    top: 180px;
     height: 0;
     font-weight: 700;
     letter-spacing: 0.05em;
@@ -33,6 +45,16 @@ h1 {
     border-bottom: 1px solid rgba(255,255,255,0.1);
     animation: line_animation 3s;
 }
+*/
+
+.home .logo {
+    margin: auto;
+    left: 0px;
+    right: 0px;
+    top: 10%;
+    position: absolute;
+    animation: logo_animation 2s;
+}
 
 .login_modal {
     top: 350px;
@@ -40,11 +62,13 @@ h1 {
     position: absolute;
     font-size: 14px;
     font-family: "Roboto", sans-serif;
-    padding: 50px;
     background: black;
     margin: auto;
     left: 0px;
     right: 0px;
+    padding: 45px;
+    transition-delay: 1s;
+    animation: appear 
 }
 
 .login_modal .form {
@@ -73,11 +97,10 @@ h1 {
     cursor: pointer;
     background: blue;
 }
-
-.login_modal .form button:hover,.form button:active,.form button:focus {
+.login_modal .login button:hover {
+    animation: hover_button 1s;
     background: white;
     color: black;
-    border: blue;
 }
 
 .login_modal .checkbox {
@@ -95,12 +118,19 @@ h1 {
 }
 
 .under_login button {
-    color: black;
-    background: white;
+    color: white;
+    background: black;
     padding: 10px;
-    margin: 16px;
+    margin: 30px;
     height: 40px;
+    border: none;
+    font-size: 12px;
     cursor: pointer;
+}
+
+.under_login button:hover {
+    animation: under_hover_button 1s;
+    color: blue;
 }
 
 .under_login a {
