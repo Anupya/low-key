@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
 
-/* HOME PAGE */
+/* HOME PAGE --------------------------------  */
 
 body {
     background: blue;
@@ -8,12 +8,16 @@ body {
 
 h1 {
     text-align: center;
+    position: relative;
+    top: 100px;
+    color: white;
 }
 
 .ui-divider {
     position: relative;
     margin: auto;
     line-height: 1;
+    top: 130px;
     height: 0;
     font-weight: 700;
     letter-spacing: 0.05em;
@@ -41,7 +45,6 @@ h1 {
     z-index: 1;
     text-align: center;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-    padding: 45px;
 }
 
 .login_modal input {
@@ -83,11 +86,12 @@ h1 {
 .under_login {
   display: inline-block;
 }
+
 .under_login button {
     color: black;
     background: white;
     padding: 10px;
-    margin: 20px;
+    margin: 16px;
     height: 40px;
     cursor: pointer;
 }
@@ -102,7 +106,7 @@ h1 {
 
 
 
-/* BROWSE PAGE */
+/* BROWSE PAGE ------------------------------- */
 
 .browse {
     background: blue;
