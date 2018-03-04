@@ -21,21 +21,48 @@
     from {opacity: 0;}
     to {opacity: 0.4;}
 }
-@keyframes slide {
-  20% {margin-left: 0px;}
-  30% {margin-left: -1000px;}
-  50% {margin-left: -1000px;}
-  60% {margin-left: -1456px;}
-  70% {margin-left: -1456px;}
-  80% {margin-left: -100%;}
-  90% {margin-left: -100%;}
-}
+
+
 
 
 /* HOME PAGE --------------------------------  */
 
+.the_slideshow .the_slider > li {
+  display: inline-block;
+}
+
+.the_slideshow {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.the_slideshow .the_slider {
+  font-size: 0;
+  height: 100%;
+  left: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 400%;
+}
+.the_slideshow .the_slider > li {
+  box-sizing: border-box;
+  text-align: center;
+  width: 25%;
+}
+.the_slideshow .the_slider > li img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+
 body {
-    background: blue;
     min-width: 700px;
 }
 
@@ -46,23 +73,6 @@ h1 {
     color: white;
 }
 
-#slideshow {
-    overflow: hidden;
-    height: 100%;
-    width: 100%;
-    display: inline-block;
-}
-
-.slide-wrapper {
-    width: 100%;
-    animation: slide 18s ease infinite;
-}
-
-.wallpaper {
-    float: left;
-    height: 100%;
-    width: 100%;
-}
 .home {
     height: 100%;
     width: 100%;
@@ -90,8 +100,6 @@ h1 {
     left: 0px;
     right: 0px;
     padding: 45px;
-    transition-delay: 1s;
-    animation: appear 
 }
 
 .login_modal .form {
@@ -122,7 +130,7 @@ h1 {
     background: blue;
 }
 .login_modal .login button:hover {
-    animation: hover_button 1s;
+    animation: hover_button 0.6s;
     background: white;
     color: black;
 }
