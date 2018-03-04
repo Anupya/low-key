@@ -134,7 +134,6 @@ h1 {
     animation: under_hover_button 1s;
     color: blue;
 }
-
 .under_login a {
     text-decoration: none;
     color: blue;
@@ -162,6 +161,22 @@ h1 {
     margin: auto;
 }
 
+.thumbs {
+    position: absolute;
+    top: 600px;
+    width: 20%;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+}
+.thumbs img {
+    position: relative;
+    margin: 20px auto 20px 20px;
+    display: inline-block;
+}
+.thumbs img:hover {
+    /* add stuff here */
+}
 
 
 
