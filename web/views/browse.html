@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+{% include 'browse.html' %}
+
+<!-- THE ENTIRE PAGE -->
+<div class="browse">
+
+  <!-- THIS IS THE MODAL THAT CONTAINS EVERYTHING -->
+  <div class="now_playing">
+    <div class="album">
+      
+      <div class="player">
+
+        <audio controls autoplay>
+        <iframe src="https://open.spotify.com/embed?uri=spotify%3Atrack%3A33Q6ldVXuJyQmqs8BmAa0k" frameborder="0" allowtransparency="true">
+
+          <div class="overlay">
+            <img src="https://cdn.shopify.com/s/files/1/1061/1924/products/Thumbs_Up_Hand_Sign_Emoji_large.png?v=1480481047">
+            <img src="https://cdn.shopify.com/s/files/1/0185/5092/products/persons-0107_large.png?v=1369544012">
+          </div>
+
+        </iframe>
+
+        <iframe src="https://open.spotify.com/embed?uri=spotify%3Atrack%3A33Q6ldVXuJyQmqs8BmAa0k" width="300" height="80" frameborder="0" allowtransparency="true"></iframe>
+
+        <iframe src="https://open.spotify.com/embed?uri=spotify%3Atrack%3A33Q6ldVXuJyQmqs8BmAa0k" width="250" height="330" frameborder="0" allowtransparency="true"></iframe>
+       
+
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
