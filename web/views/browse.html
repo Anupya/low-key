@@ -19,25 +19,26 @@
     <div class="album">
       
       <div class="player">
+
         <iframe src="https://open.spotify.com/embed?uri=spotify%3Atrack%3A33Q6ldVXuJyQmqs8BmAa0k"
         width="250" height="330" frameborder="0" allowtransparency="true"></iframe>
-        
+
           <div class="thumbs">
             <img src="/images/Thumbsup.png" alt="Thumbs up"/>
-            <script> 
-            $(function() {
-               $(".thumbs").one('click', function(e) {
-                   $('iframe').remove();
-                   $('.player').append("<iframe src='https://open.spotify.com/embed?uri=spotify%3Atrack%3A33Q6ldVXuJyQmqs8BmAa0k' width='250' height='330' frameborder='0' allowtransparency='true'></iframe>");
-               });
-            });
+
+            <script>
+              var iFrameArray = ['https://open.spotify.com/embed/track/3ncgNpxLoBQ65ABk4djDyd', 'https://open.spotify.com/embed/track/35ieKju5aLWFN5UgfJ27mL', 'https://open.spotify.com/embed/track/1nO2NjuFkGaAWcMdJ1pNrp', 'https://open.spotify.com/embed/track/2ooF4088y5L72c4YTEJQoB'];
+
+              const thumbs = document.querySelector('.thumbs');
+              thumbs.addEventListener('click', function() {
+                  var randomNum = Math.random() * 3;
+                  document.querySelector('iframe').src= iFrameArray[randomNum];
+              })
+
+
             </script>
             <img src="/images/Thumbsdown.png" alt="Thumbs down" />
-            <script>
-              function thumbsClicked() {
-                $(".thumbs").append();
-              };
-            </script>
+            <img src="/images/hearteyes.png" alt="Heart Eyes" />
           </div>
 
         <!--

@@ -160,6 +160,7 @@ h1 {
     width: 20px;
     top: 0px;
     left: 0px;
+    z-index: 100;
 }
 
 .browse .overlay {
