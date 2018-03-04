@@ -30,15 +30,19 @@
               var iFrameArray = ['https://open.spotify.com/embed/track/3ncgNpxLoBQ65ABk4djDyd', 'https://open.spotify.com/embed/track/35ieKju5aLWFN5UgfJ27mL', 'https://open.spotify.com/embed/track/1nO2NjuFkGaAWcMdJ1pNrp', 'https://open.spotify.com/embed/track/2ooF4088y5L72c4YTEJQoB'];
 
               const thumbs = document.querySelector('.thumbs');
+              var oldNum = 0;
               thumbs.addEventListener('click', function() {
-                  var randomNum = Math.random() * 3;
-                  document.querySelector('iframe').src= iFrameArray[randomNum];
+                  var randomNum = Math.floor(Math.random() * 4);
+                  if (oldNum != randomNum) {
+                      document.querySelector('iframe').src= iFrameArray[randomNum];
+                      oldNum = randomNum;
+                  }
               })
 
-
             </script>
-            <img src="/images/Thumbsdown.png" alt="Thumbs down" />
             <img src="/images/hearteyes.png" alt="Heart Eyes" />
+            <img src="/images/Thumbsdown.png" alt="Thumbs down" />
+            
           </div>
 
         <!--

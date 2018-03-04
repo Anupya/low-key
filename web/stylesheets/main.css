@@ -209,10 +209,11 @@ h2 {
     left: 0px;
     right: 0px;
     margin: auto;
+    background: black;
 }
 .thumbs img {
     position: relative;
-    margin: 20px auto 20px 20px;
+    margin: 0px 10px 0px 0px;
     display: inline-block;
 }
 .thumbs img:hover {
