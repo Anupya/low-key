@@ -2,17 +2,7 @@
 <div class="browse">
 
   <img class="wallpaper" src="/images/browse_wallpaper.png">
- <div class="overlay">
   <img class="top_left_logo" src="/images/logo.png">
-  <script> 
-    $(function() {
-       $(".overlay").one('click', function(e) {
-           $('.overlay').remove();
-       });
-    });
-    </script>
-    <h2> Make sure you have your volume turned up! <br><br> Click anywhere to start hunting! </h2>
-  </div>
 
   <!-- THIS IS THE MODAL THAT CONTAINS EVERYTHING -->
   <div class="now_playing">
@@ -27,12 +17,21 @@
             <img src="/images/Thumbsup.png" alt="Thumbs up"/>
 
             <script>
-              var iFrameArray = ['https://open.spotify.com/embed/track/3ncgNpxLoBQ65ABk4djDyd', 'https://open.spotify.com/embed/track/35ieKju5aLWFN5UgfJ27mL', 'https://open.spotify.com/embed/track/1nO2NjuFkGaAWcMdJ1pNrp', 'https://open.spotify.com/embed/track/2ooF4088y5L72c4YTEJQoB'];
+              var iFrameArray = ['https://open.spotify.com/embed/track/3ncgNpxLoBQ65ABk4djDyd', 
+              'https://open.spotify.com/embed/track/35ieKju5aLWFN5UgfJ27mL', 
+              'https://open.spotify.com/embed/track/1nO2NjuFkGaAWcMdJ1pNrp', 
+              'https://open.spotify.com/embed/track/2ooF4088y5L72c4YTEJQoB', 
+              'https://open.spotify.com/embed/track/4uhvMW7ly7tJil31YYscAN', 
+              'https://open.spotify.com/embed/track/06u5LrUpbosQlQ1QJFhPpG', 
+              'https://open.spotify.com/embed/track/2QeQNF182V61Im0QpjdVta', 
+              'https://open.spotify.com/embed/track/11cCVYamncF0ezwjj1irQ0', 
+              'https://open.spotify.com/embed/track/177WEvlLsCc0FzCTWslawr',
+              'https://open.spotify.com/embed/track/3YeJXuRSNS5FYwOsDu44kD'];
 
               const thumbs = document.querySelector('.thumbs');
               var oldNum = 0;
               thumbs.addEventListener('click', function() {
-                  var randomNum = Math.floor(Math.random() * 4);
+                  var randomNum = Math.floor(Math.random() * 9);
                   if (oldNum != randomNum) {
                       document.querySelector('iframe').src= iFrameArray[randomNum];
                       oldNum = randomNum;
