@@ -110,13 +110,13 @@ h1 {
 
 .browse {
     background: blue;
-    height: 1000px;
+    height: 100%;
 }
 
 .player iframe {
     left: 0px;
     right: 0px;
-    top: 300px;
+    top: 150px;
     position: absolute;
     height: 500px;
     height: 420px;
